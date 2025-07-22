@@ -1,6 +1,6 @@
 // src/app/api/cron/clean-posts/route.ts
 import { NextResponse } from 'next/server';
-import { query } from '@/src/lib/db';
+import { query } from '@/src/lib/db'; // CORREGIDO AQUÍ: Añade 'src/'
 
 export async function GET(req: Request) {
   // Proteger esta ruta para que solo sea accesible por Vercel Cron Job o una clave secreta
