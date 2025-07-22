@@ -21,7 +21,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"] // ¡Esta línea es CRUCIAL para resolver los alias @/src!
+      // ¡Esta línea es la más importante para resolver los alias '@/src'!
+      // Asegúrate de que esté configurada exactamente así:
+      "@/*": ["./src/*"] 
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
