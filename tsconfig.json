@@ -1,4 +1,3 @@
-// tsconfig.json (en la raíz de tu proyecto, junto a package.json)
 {
   "compilerOptions": {
     "target": "es5",
@@ -21,9 +20,7 @@
       }
     ],
     "paths": {
-      // ¡Esta línea es la más importante para resolver los alias '@/src'!
-      // Asegúrate de que esté configurada exactamente así:
-      "@/*": ["./src/*"] 
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
