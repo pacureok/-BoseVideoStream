@@ -1,6 +1,6 @@
 // src/app/api/streamer-info/route.ts
 import { NextResponse } from 'next/server';
-import { query } from '@/src/lib/db';
+import { query } from '@/src/lib/db'; // CORREGIDO AQUÍ: Añade 'src/'
 
 export async function GET(req: Request) {
   const url = new URL(req.url);
