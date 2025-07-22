@@ -10,8 +10,8 @@
   },
   "dependencies": {
     // ... otras dependencias que ya tengas
-    "pusher": "^7.0.0",        // Para el backend
-    "pusher-js": "^7.0.0",     // Para el frontend
+    "pusher": "^7.0.0",
+    "pusher-js": "^7.0.0"
     // ... otras dependencias que ya tengas
   },
   "devDependencies": {
