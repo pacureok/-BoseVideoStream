@@ -1,8 +1,8 @@
 // src/app/api/live/route.ts
 import { NextResponse } from 'next/server';
 import { getServerSession } from "next-auth";
-import { authOptions } from "@/src/app/api/auth/[...nextauth]/route";
-import { query } from '@/src/lib/db';
+import { authOptions } from "@/src/app/api/auth/[...nextauth]/route"; // CORREGIDO AQUÍ: Añade 'src/'
+import { query } from '@/src/lib/db'; // CORREGIDO AQUÍ: Añade 'src/'
 
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
