@@ -1,7 +1,8 @@
+// src/app/api/auth/[...nextauth]/route.ts
 import NextAuth from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
-import { comparePassword } from "@/lib/auth"; // Importamos la función de comparación
-import { query } from "@/lib/db";
+import { comparePassword } from "@/src/lib/auth"; // CAMBIO AQUÍ: Añade 'src/'
+import { query } from "@/src/lib/db"; // CAMBIO AQUÍ: Añade 'src/'
 
 export const authOptions = {
   providers: [
