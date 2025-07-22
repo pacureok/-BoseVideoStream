@@ -9,12 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-
-    "pusher": "^7.0.0",
-    "pusher-js": "^7.0.0"
-
+    "pusher": "^5.2.0",
+    "pusher-js": "^8.0.0"
   },
   "devDependencies": {
-
   }
 }
